@@ -4,7 +4,12 @@ export interface Theme {
   PRIMARY_TEXT_COLOR: string;
   PRIMARY_BUTTON_COLOR: string;
   PRIMARY_BUTTON_TEXT_COLOR: string;
-  STATUS_BAR_STYLE: string;
+  STATUS_BAR_STYLE:
+    | 'default'
+    | 'light-content'
+    | 'dark-content'
+    | null
+    | undefined;
 }
 
 export interface ThemeState {
