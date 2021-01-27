@@ -45,8 +45,6 @@ const Container = styled.ImageBackground`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }: ThemeState): string =>
-    theme.PRIMARY_BACKGROUND_COLOR};
 `;
 
 const Button = styled.TouchableOpacity`
