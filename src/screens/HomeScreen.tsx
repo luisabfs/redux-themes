@@ -14,9 +14,12 @@ const HomeScreen: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar backgroundColor={theme.PRIMARY_BACKGROUND_COLOR} />
+      <StatusBar
+        backgroundColor={theme.PRIMARY_BACKGROUND_COLOR}
+        barStyle={theme.STATUS_BAR_STYLE}
+      />
       <Container>
-        {theme.mode == 'light' ? (
+        {theme.mode === 'light' ? (
           <Button
             onPress={(): SwitchThemeAction =>
               dispatch(Actions.switchTheme(darkTheme))
