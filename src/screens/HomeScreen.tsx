@@ -18,7 +18,7 @@ const HomeScreen: React.FC = () => {
         backgroundColor={theme.PRIMARY_BACKGROUND_COLOR}
         barStyle={theme.STATUS_BAR_STYLE}
       />
-      <Container>
+      <Container source={theme.BACKGROUND_IMAGE}>
         {theme.mode === 'light' ? (
           <Button
             onPress={(): SwitchThemeAction =>
@@ -41,7 +41,7 @@ const HomeScreen: React.FC = () => {
   );
 };
 
-const Container = styled.View`
+const Container = styled.ImageBackground`
   flex: 1;
   align-items: center;
   justify-content: center;

@@ -1,5 +1,8 @@
+import { ImageSourcePropType } from 'react-native';
+
 export interface Theme {
   mode: 'light' | 'dark';
+  BACKGROUND_IMAGE: ImageSourcePropType;
   PRIMARY_BACKGROUND_COLOR: string;
   PRIMARY_TEXT_COLOR: string;
   PRIMARY_BUTTON_COLOR: string;
